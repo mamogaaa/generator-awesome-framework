@@ -40,6 +40,7 @@ module.exports = class extends Generator {
   }
 
   app() {
+    this.sourceRoot(path.join(__dirname, './templates'))
     console.log(this.database)
     this.fs.copy(
       this.templatePath('main/gitignore'),
